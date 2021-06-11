@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="93.892">
-    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="19.496">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="385.863">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="38.015">
         <system-out><![CDATA[Given launch new SCD url....................................................passed
 When check title of login page..............................................passed
 Then verify actual title with expected title of New SCD login page..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="26.971">
-        <system-out><![CDATA[Given user click on New SCD username text field.............................passed
-When user enters invalid username and password..............................passed
-And click on sign in button to login into New SCD...........................passed
-And user refresh the login page.............................................passed
-Then user enters valid username and password................................passed
-And user click on sign in button to login into New SCD......................passed
+    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="15.066">
+        <system-out><![CDATA[Given relogin with new credentials of newly created user....................passed
+When click on sign in button................................................passed
+Then user is on New SCD homepage............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="From Admin delete a user" time="47.049">
-        <system-out><![CDATA[Given login New SCD with Admin..............................................passed
-And click on NewSCD user mgmt...............................................passed
-When Search for a user and click on three dots..............................passed
-And select delete user and click on OK......................................passed
-Then confirm user is deleted successfully...................................passed
+    <testcase classname="NewSCD functional test" name="Assign Binder to Team Lead" time="163.479">
+        <system-out><![CDATA[Given login New SCD with Verification Manager...............................passed
+And click on NewSCD Activity button.........................................passed
+When Search for Manager Assignment queue link and click on it...............passed
+And Click on Add Team Leads link............................................passed
+And Add Team Lead into Team Lead List pane..................................passed
+And Select an UnAssigned Binder and select Team Lead........................passed
+Then click on Assign button.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="NewSCD functional test" name="Assign Binder to Verification" time="113.779">
+        <system-out><![CDATA[Given login New SCD with Verification Team Lead.............................passed
+And click on Activity button................................................passed
+When Search for Team Lead Assignment queue link and click on it.............passed
+And Click on Add Verifiers link.............................................passed
+And Add Verifier into Verifier List pane....................................passed
+And Select an UnAssigned Binder and select Verifier.........................passed
+Then click on Binder Assignment button......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="NewSCD functional test" name="Assign Binder to Verification 2" time="53.6">
+        <system-out><![CDATA[Given login New SCD with Verifier...........................................passed
+When Search for a Binder....................................................passed
+Then click on Open Binder button............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

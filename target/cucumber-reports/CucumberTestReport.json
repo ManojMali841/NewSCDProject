@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-18T09:45:40.471Z",
+        "start_timestamp": "2021-06-03T11:07:14.815Z",
         "before": [
           {
             "result": {
-              "duration": 2006900,
+              "duration": 11997100,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 2002500,
+              "duration": 5995400,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14335859100,
+              "duration": 31432962800,
               "status": "passed"
             },
             "line": 10,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2060029900,
+              "duration": 2202996000,
               "status": "passed"
             },
             "line": 11,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3015062700,
+              "duration": 3008036500,
               "status": "passed"
             },
             "line": 12,
@@ -77,10 +77,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-18T09:45:59.989Z",
+        "start_timestamp": "2021-06-03T11:07:52.972Z",
         "before": [
           {
             "result": {
+              "duration": 1989200,
               "status": "passed"
             },
             "match": {
@@ -88,14 +89,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "verify new SCD login functionalty with Negative Login Credentials",
+        "line": 46,
+        "name": "After saving new password for newly created user relogin with new credentials",
         "description": "",
-        "id": "newscd-functional-test;verify-new-scd-login-functionalty-with-negative-login-credentials",
+        "id": "newscd-functional-test;after-saving-new-password-for-newly-created-user-relogin-with-new-credentials",
         "after": [
           {
             "result": {
-              "duration": 1010600,
+              "duration": 999100,
               "status": "passed"
             },
             "match": {
@@ -108,85 +109,53 @@
         "steps": [
           {
             "result": {
+              "duration": 15044003400,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user click on New SCD username text field",
+            "line": 48,
+            "name": "relogin with new credentials of newly created user",
             "match": {
-              "location": "stepdefinition.LoginPage.user_click_on_new_scd_username_text_field()"
+              "location": "stepdefinition.NewlyCreatedUserLog.relogin_with_new_credentials_of_newly_created_user()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 26963455100,
+              "duration": 5002500,
               "status": "passed"
             },
-            "line": 19,
-            "name": "user enters invalid username and password",
+            "line": 49,
+            "name": "click on sign in button",
             "match": {
-              "location": "stepdefinition.LoginPage.user_enters_invalid_username_and_password()"
+              "location": "stepdefinition.NewlyCreatedUserLog.click_on_sign_in_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 997300,
               "status": "passed"
             },
-            "line": 20,
-            "name": "click on sign in button to login into New SCD",
+            "line": 50,
+            "name": "user is on New SCD homepage",
             "match": {
-              "location": "stepdefinition.LoginPage.click_on_sign_in_button_to_login_into_new_scd()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user refresh the login page",
-            "match": {
-              "location": "stepdefinition.LoginPage.user_refresh_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1002200,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user enters valid username and password",
-            "match": {
-              "location": "stepdefinition.LoginPage.user_enters_valid_username_and_password()"
+              "location": "stepdefinition.NewlyCreatedUserLog.user_is_on_new_scd_homepage()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user click on sign in button to login into New SCD",
-            "match": {
-              "location": "stepdefinition.LoginPage.user_click_on_sign_in_button_to_login_into_new_scd()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@Smoketest2"
+            "name": "@Smoketest5"
           }
         ]
       },
       {
-        "start_timestamp": "2021-05-18T09:46:26.972Z",
+        "start_timestamp": "2021-06-03T11:08:08.101Z",
         "before": [
           {
             "result": {
-              "duration": 1005000,
+              "duration": 1999600,
               "status": "passed"
             },
             "match": {
@@ -194,13 +163,14 @@
             }
           }
         ],
-        "line": 65,
-        "name": "From Admin delete a user",
+        "line": 74,
+        "name": "Assign Binder to Team Lead",
         "description": "",
-        "id": "newscd-functional-test;from-admin-delete-a-user",
+        "id": "newscd-functional-test;assign-binder-to-team-lead",
         "after": [
           {
             "result": {
+              "duration": 1011100,
               "status": "passed"
             },
             "match": {
@@ -213,13 +183,13 @@
         "steps": [
           {
             "result": {
-              "duration": 9168186300,
+              "duration": 1001300,
               "status": "passed"
             },
-            "line": 67,
-            "name": "login New SCD with Admin",
+            "line": 76,
+            "name": "login New SCD with Verification Manager",
             "match": {
-              "location": "stepdefinition.DeleteUserFrmAdmn.login_New_SCD_with_Admin()"
+              "location": "stepdefinition.AssignBinderToTeamLead.login_New_SCD_with_Verification_Manager()"
             },
             "keyword": "Given "
           },
@@ -227,22 +197,22 @@
             "result": {
               "status": "passed"
             },
-            "line": 68,
-            "name": "click on NewSCD user mgmt",
+            "line": 77,
+            "name": "click on NewSCD Activity button",
             "match": {
-              "location": "stepdefinition.DeleteUserFrmAdmn.click_on_NewSCD_user_mgmt()"
+              "location": "stepdefinition.AssignBinderToTeamLead.click_on_NewSCD_Activity_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 37876621600,
+              "duration": 999100,
               "status": "passed"
             },
-            "line": 69,
-            "name": "Search for a user and click on three dots",
+            "line": 78,
+            "name": "Search for Manager Assignment queue link and click on it",
             "match": {
-              "location": "stepdefinition.DeleteUserFrmAdmn.Search_for_a_user_and_click_on_three_dots()"
+              "location": "stepdefinition.AssignBinderToTeamLead.Search_for_Manager_Assignment_queue_link_and_click_on_it()"
             },
             "keyword": "When "
           },
@@ -250,10 +220,22 @@
             "result": {
               "status": "passed"
             },
-            "line": 70,
-            "name": "select delete user and click on OK",
+            "line": 79,
+            "name": "Click on Add Team Leads link",
             "match": {
-              "location": "stepdefinition.DeleteUserFrmAdmn.select_delete_user_and_click_on_OK()"
+              "location": "stepdefinition.AssignBinderToTeamLead.Click_on_Add_Team_Leads_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002700,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "Add Team Lead into Team Lead List pane",
+            "match": {
+              "location": "stepdefinition.AssignBinderToTeamLead.Add_Team_Lead_into_Team_Lead_List_pane()"
             },
             "keyword": "And "
           },
@@ -261,17 +243,223 @@
             "result": {
               "status": "passed"
             },
-            "line": 71,
-            "name": "confirm user is deleted successfully",
+            "line": 81,
+            "name": "Select an UnAssigned Binder and select Team Lead",
             "match": {
-              "location": "stepdefinition.DeleteUserFrmAdmn.confirm_user_is_deleted_successfully()"
+              "location": "stepdefinition.AssignBinderToTeamLead.Select_an_UnAssigned_Binder_and_select_Team_Lead()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163454002100,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "click on Assign button",
+            "match": {
+              "location": "stepdefinition.AssignBinderToTeamLead.click_on_Assign_button()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Smoketest7"
+            "name": "@Smoketest8"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-03T11:10:51.669Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.setup()"
+            }
+          }
+        ],
+        "line": 86,
+        "name": "Assign Binder to Verification",
+        "description": "",
+        "id": "newscd-functional-test;assign-binder-to-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "login New SCD with Verification Team Lead",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.login_New_SCD_with_Verification_Team_Lead()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "click on Activity button",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.click_on_Activity_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Search for Team Lead Assignment queue link and click on it",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.Search_for_Team_Lead_Assignment_queue_link_and_click_on_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2996700,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "Click on Add Verifiers link",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.Click_on_Add_Verifiers_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "Add Verifier into Verifier List pane",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.Add_Verifier_into_Verifier_List_pane()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002300,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "Select an UnAssigned Binder and select Verifier",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.Select_an_UnAssigned_Binder_and_select_Verifier()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113749011700,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "click on Binder Assignment button",
+            "match": {
+              "location": "stepdefinition.AssignBinderToVerifier.click_on_Binder_Assignment_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoketest9"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-03T11:12:45.506Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1998900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.setup()"
+            }
+          }
+        ],
+        "line": 97,
+        "name": "Assign Binder to Verification",
+        "description": "",
+        "id": "newscd-functional-test;assign-binder-to-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 3996400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3001101200,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "login New SCD with Verifier",
+            "match": {
+              "location": "stepdefinition.OpenBinderWithVerifierLogin.login_New_SCD_with_Verifier()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45106006300,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "Search for a Binder",
+            "match": {
+              "location": "stepdefinition.OpenBinderWithVerifierLogin.Search_for_a_Binder()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5475997800,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "click on Open Binder button",
+            "match": {
+              "location": "stepdefinition.OpenBinderWithVerifierLogin.click_on_Open_Binder_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoketest10"
           }
         ]
       }
