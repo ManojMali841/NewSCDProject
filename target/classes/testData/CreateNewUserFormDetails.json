@@ -2,7 +2,7 @@
 "FormDetails":[ 
 
 {
-"Username":"Manager12",
+"Username":"Manojtest1",
 "FirstName":"DemoD",
 "LastName":"ManagerD",
 "Email":"Test@gmail.com",
@@ -17,7 +17,7 @@
 "answer2":"Mumbai",
 "SecurityQuestion3":"What is my father's birthday ?",
 "answer3":"SecondOctober",
-"newpassword":"Abcd@1234"
+"newpassword":"Abcd@123"
 
 }
 ]

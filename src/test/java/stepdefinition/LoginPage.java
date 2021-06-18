@@ -1,6 +1,7 @@
 package stepdefinition;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
@@ -17,7 +18,7 @@ import pageClass.LoginPageFeaturesMethods;
 public class LoginPage extends BaseClass{
 	
 	@Given("launch new SCD url")
-	public void launch_new_SCD_url() throws InterruptedException
+	public void launch_new_SCD_url() throws InterruptedException, MalformedURLException
 	{
 		BaseClass.initialization();
 		Thread.sleep(2000);

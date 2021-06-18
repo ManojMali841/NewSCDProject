@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 
+import DesktopPBFApp.RunDesktopFun;
 import baseClass.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -23,12 +24,15 @@ public class OpenBinderWithVerifierLogin {
 		System.out.println("Logged in With Verifier");
 	}
 	@When("Search for a Binder")
-	public void Search_for_a_Binder() throws InterruptedException, IOException, ParseException
+	public void Search_for_a_Binder() throws Exception
 	{
+		//BaseClass.desktopInitialization();
 		OpenBinderForVerifier Op=new OpenBinderForVerifier();
 		Thread.sleep(3000);
-		Op.OpenBinderForVerifierFeature(); 
+		String path=Op.OpenBinderForVerifierFeature(); 
 		System.out.println("Searched for a Binder");
+		//RunDesktopFun b=new RunDesktopFun();
+		//b.ProcessWorkflow(path);
 	}
 	
 	@Then("click on Open Binder button")
